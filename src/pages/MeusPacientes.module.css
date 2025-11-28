@@ -1,0 +1,70 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4rem 1.5rem 0;
+  gap: 1.5rem;
+  background: linear-gradient(135deg, #ffa726, #f37221);
+}
+
+.logo {
+  margin-bottom: 1rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem 1.5rem 1.8rem;
+}
+
+.description {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.patientsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.patientCard {
+  border: 1px solid #f3f4f6;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.patientHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.patientName {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #0f172a;
+}
+
+.patientInfo {
+  margin: 0;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+

@@ -1,0 +1,19 @@
+.card {
+  width: 100%;
+  max-width: 420px;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 1px 3px 10px rgba(146, 96, 21, 0.2);
+  padding: 1rem;
+}
+
+.cardFluid {
+  max-width: none;
+  width: 100%;
+  border-radius: 1rem 1rem 0rem 0rem;
+  box-shadow: none;
+  padding: 0;
+  height: 100%;
+}
+

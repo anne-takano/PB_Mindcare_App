@@ -1,0 +1,72 @@
+.perfilWrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.perfilMain {
+  background: linear-gradient(135deg, #ffa726, #f37221);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  padding: 4rem 1.5rem;
+}
+
+.perfilCard {
+  width: min(760px, 100%);
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.perfilHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+}
+
+.perfilSubtitle {
+  margin: 0;
+  color: #75757c;
+}
+
+.perfilAvatar {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0 1rem;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.infoItem {
+  background-color: #f9f9f9;
+  border-radius: 0.9rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.infoLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.infoValue {
+  font-size: 1rem;
+  color: #0f172a;
+}
+

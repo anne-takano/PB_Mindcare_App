@@ -1,0 +1,133 @@
+.homeWrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.homePage {
+  background: linear-gradient(135deg, #ffa726, #f37221);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  padding: 4rem 1.5rem 0rem;
+}
+
+.homeCard {
+  width: 100%;
+  max-width: 520px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.quickActionsCard {
+  width: 100dvw;
+  margin-left: calc((100dvw - 100%) / -2);
+  margin-right: calc((100dvw - 100%) / -2);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+
+.quickActionsHeader {
+  margin: 0;
+  color: #0f172a;
+}
+
+.quickActionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.terapeutaCard {
+  width: 100%;
+  max-width: 720px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.terapeutaList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.terapeutaList li {
+  background-color: #fff7ed;
+  border-radius: 0.9rem;
+  padding: 0.9rem;
+  color: #7c2d12;
+  font-weight: 500;
+}
+
+.homeHeader {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.homeSubtitle {
+  margin: 0;
+  color: #75757c;
+  font-size: 1rem;
+}
+
+.userData {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.avatarWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dataItem {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.dataLabel {
+  font-size: 0.8em;
+  color: #75757c;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.dataValue {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #75757c;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+

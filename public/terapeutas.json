@@ -1,0 +1,436 @@
+[
+    {
+        "id": 1,
+        "nome": "Erina Yoshida",
+        "genero": "Feminino",
+        "especialidade": "Terapia Cognitiva Comportamental (TCC)",
+        "crp": "08/12345",
+        "avaliacao": 4.8,
+        "numeroAvaliacoes": 152,
+        "endereco": "Curitiba (PR)",
+        "valorPrimeiraConsulta": 150,
+        "proximaDataDisponivel": "2025-11-04",
+        "horariosDisponiveis": [
+            "08:00",
+            "10:00",
+            "14:00",
+            "16:00"
+        ]
+    },
+    {
+        "id": 2,
+        "nome": "Marina Campos",
+        "genero": "Feminino",
+        "especialidade": "Psicanálise",
+        "crp": "06/54321",
+        "avaliacao": 4.6,
+        "numeroAvaliacoes": 89,
+        "endereco": "São Paulo (SP)",
+        "valorPrimeiraConsulta": 180,
+        "proximaDataDisponivel": "2025-11-06",
+        "horariosDisponiveis": [
+            "09:00",
+            "11:00",
+            "15:00",
+            "17:00"
+        ]
+    },
+    {
+        "id": 3,
+        "nome": "Daniel Monteiro",
+        "genero": "Masculino",
+        "especialidade": "Terapia Humanista",
+        "crp": "05/67890",
+        "avaliacao": 4.3,
+        "numeroAvaliacoes": 74,
+        "endereco": "Rio de Janeiro (RJ)",
+        "valorPrimeiraConsulta": 160,
+        "proximaDataDisponivel": "2025-11-05",
+        "horariosDisponiveis": [
+            "08:30",
+            "10:30",
+            "14:30",
+            "16:30"
+        ]
+    },
+    {
+        "id": 4,
+        "nome": "Marcos Souza",
+        "genero": "Masculino",
+        "especialidade": "Terapia Sistêmica",
+        "crp": "07/13579",
+        "avaliacao": 3.9,
+        "numeroAvaliacoes": 62,
+        "endereco": "Porto Alegre (RS)",
+        "valorPrimeiraConsulta": 140,
+        "proximaDataDisponivel": "2025-11-08",
+        "horariosDisponiveis": [
+            "09:30",
+            "11:30",
+            "15:30"
+        ]
+    },
+    {
+        "id": 5,
+        "nome": "Rafael Oliveira",
+        "genero": "Masculino",
+        "especialidade": "Gestalt-terapia",
+        "crp": "09/24680",
+        "avaliacao": 4.5,
+        "numeroAvaliacoes": 103,
+        "endereco": "Recife (PE)",
+        "valorPrimeiraConsulta": 170,
+        "proximaDataDisponivel": "2025-11-03",
+        "horariosDisponiveis": [
+            "08:00",
+            "10:00",
+            "14:00",
+            "16:00",
+            "18:00"
+        ]
+    },
+    {
+        "id": 6,
+        "nome": "Lúcia Almeida",
+        "genero": "Feminino",
+        "especialidade": "Analítico-Comportamental",
+        "crp": "04/98765",
+        "avaliacao": 4.9,
+        "numeroAvaliacoes": 210,
+        "endereco": "Pelotas (RS)",
+        "valorPrimeiraConsulta": 160,
+        "proximaDataDisponivel": "2025-11-07",
+        "horariosDisponiveis": [
+            "09:00",
+            "11:00",
+            "13:00",
+            "15:00",
+            "17:00"
+        ]
+    },
+    {
+        "id": 7,
+        "nome": "Camila Ferreira",
+        "genero": "Feminino",
+        "especialidade": "Terapia Cognitiva Comportamental (TCC)",
+        "crp": "03/11223",
+        "avaliacao": 4.7,
+        "numeroAvaliacoes": 134,
+        "endereco": "Belo Horizonte (MG)",
+        "valorPrimeiraConsulta": 150,
+        "proximaDataDisponivel": "2025-11-09",
+        "horariosDisponiveis": [
+            "08:00",
+            "09:00",
+            "14:00",
+            "16:00"
+        ]
+    },
+    {
+        "id": 8,
+        "nome": "Hugo Martins",
+        "genero": "Masculino",
+        "especialidade": "Psicanálise",
+        "crp": "05/99887",
+        "avaliacao": 4.4,
+        "numeroAvaliacoes": 75,
+        "endereco": "Salvador (BA)",
+        "valorPrimeiraConsulta": 180,
+        "proximaDataDisponivel": "2025-11-10",
+        "horariosDisponiveis": [
+            "10:00",
+            "12:00",
+            "15:00"
+        ]
+    },
+    {
+        "id": 9,
+        "nome": "Juliana Prado",
+        "genero": "Feminino",
+        "especialidade": "Terapia Humanista",
+        "crp": "06/55432",
+        "avaliacao": 4.8,
+        "numeroAvaliacoes": 188,
+        "endereco": "Campinas (SP)",
+        "valorPrimeiraConsulta": 200,
+        "proximaDataDisponivel": "2025-11-12",
+        "horariosDisponiveis": [
+            "09:00",
+            "11:00",
+            "14:00"
+        ]
+    },
+    {
+        "id": 10,
+        "nome": "Tiago Nogueira",
+        "genero": "Masculino",
+        "especialidade": "Terapia Sistêmica",
+        "crp": "02/22334",
+        "avaliacao": 4.2,
+        "numeroAvaliacoes": 59,
+        "endereco": "Florianópolis (SC)",
+        "valorPrimeiraConsulta": 150,
+        "proximaDataDisponivel": "2025-11-11",
+        "horariosDisponiveis": [
+            "08:00",
+            "13:00",
+            "17:00"
+        ]
+    },
+    {
+        "id": 11,
+        "nome": "Fernanda Ribeiro",
+        "genero": "Feminino",
+        "especialidade": "Gestalt",
+        "crp": "08/88776",
+        "avaliacao": 4.9,
+        "numeroAvaliacoes": 240,
+        "endereco": "Londrina (PR)",
+        "valorPrimeiraConsulta": 190,
+        "proximaDataDisponivel": "2025-11-13",
+        "horariosDisponiveis": [
+            "09:00",
+            "11:00",
+            "15:00",
+            "17:00"
+        ]
+    },
+    {
+        "id": 12,
+        "nome": "Pedro Amaral",
+        "genero": "Masculino",
+        "especialidade": "Psicanálise",
+        "crp": "07/33221",
+        "avaliacao": 4.1,
+        "numeroAvaliacoes": 47,
+        "endereco": "Caxias do Sul (RS)",
+        "valorPrimeiraConsulta": 160,
+        "proximaDataDisponivel": "2025-11-14",
+        "horariosDisponiveis": [
+            "10:00",
+            "12:00",
+            "14:00"
+        ]
+    },
+    {
+        "id": 13,
+        "nome": "Sofia Moreira",
+        "genero": "Feminino",
+        "especialidade": "Terapia Cognitiva Comportamental (TCC)",
+        "crp": "03/76543",
+        "avaliacao": 4.6,
+        "numeroAvaliacoes": 112,
+        "endereco": "João Pessoa (PB)",
+        "valorPrimeiraConsulta": 155,
+        "proximaDataDisponivel": "2025-11-15",
+        "horariosDisponiveis": [
+            "08:00",
+            "10:00",
+            "14:00"
+        ]
+    },
+    {
+        "id": 14,
+        "nome": "Leonardo Farias",
+        "genero": "Masculino",
+        "especialidade": "Analítico-Comportamental",
+        "crp": "04/66789",
+        "avaliacao": 4.3,
+        "numeroAvaliacoes": 58,
+        "endereco": "Aracaju (SE)",
+        "valorPrimeiraConsulta": 140,
+        "proximaDataDisponivel": "2025-11-16",
+        "horariosDisponiveis": [
+            "09:00",
+            "11:00",
+            "15:00"
+        ]
+    },
+    {
+        "id": "15",
+        "nome": "Helena Dutra",
+        "genero": "Feminino",
+        "especialidade": "Gestalt-terapia",
+        "crp": "05/12398",
+        "avaliacao": 4.9,
+        "numeroAvaliacoes": 205,
+        "endereco": "Vitória (ES)",
+        "valorPrimeiraConsulta": 180,
+        "proximaDataDisponivel": "2025-11-17",
+        "horariosDisponiveis": [
+            "10:00",
+            "12:00",
+            "16:00"
+        ]
+    },
+    {
+        "id": 16,
+        "nome": "Carlos Nascimento",
+        "genero": "Masculino",
+        "especialidade": "Terapia Sistêmica",
+        "crp": "06/77881",
+        "avaliacao": 4.0,
+        "numeroAvaliacoes": 49,
+        "endereco": "Natal (RN)",
+        "valorPrimeiraConsulta": 145,
+        "proximaDataDisponivel": "2025-11-18",
+        "horariosDisponiveis": [
+            "08:30",
+            "11:00",
+            "14:30"
+        ]
+    },
+    {
+        "id": 17,
+        "nome": "Bianca Rodrigues",
+        "genero": "Feminino",
+        "especialidade": "Terapia Humanista",
+        "crp": "07/01928",
+        "avaliacao": 4.7,
+        "numeroAvaliacoes": 129,
+        "endereco": "Maringá (PR)",
+        "valorPrimeiraConsulta": 165,
+        "proximaDataDisponivel": "2025-11-19",
+        "horariosDisponiveis": [
+            "09:00",
+            "13:00",
+            "17:00"
+        ]
+    },
+    {
+        "id": 18,
+        "nome": "Renato Vieira",
+        "genero": "Masculino",
+        "especialidade": "Terapia Cognitiva Comportamental (TCC)",
+        "crp": "08/22143",
+        "avaliacao": 4.1,
+        "numeroAvaliacoes": 61,
+        "endereco": "Belém (PA)",
+        "valorPrimeiraConsulta": 150,
+        "proximaDataDisponivel": "2025-11-20",
+        "horariosDisponiveis": [
+            "08:00",
+            "10:00",
+            "15:00"
+        ]
+    },
+    {
+        "id": 19,
+        "nome": "Patrícia Leal",
+        "genero": "Feminino",
+        "especialidade": "Psicanálise",
+        "crp": "09/33421",
+        "avaliacao": 4.8,
+        "numeroAvaliacoes": 177,
+        "endereco": "Uberlândia (MG)",
+        "valorPrimeiraConsulta": 190,
+        "proximaDataDisponivel": "2025-11-21",
+        "horariosDisponiveis": [
+            "09:00",
+            "11:00",
+            "14:00"
+        ]
+    },
+    {
+        "id": 20,
+        "nome": "Gabriel Silva",
+        "genero": "Masculino",
+        "especialidade": "Terapia Cognitiva",
+        "crp": "02/99812",
+        "avaliacao": 4.5,
+        "numeroAvaliacoes": 93,
+        "endereco": "Niterói (RJ)",
+        "valorPrimeiraConsulta": 170,
+        "proximaDataDisponivel": "2025-11-22",
+        "horariosDisponiveis": [
+            "08:00",
+            "13:00",
+            "16:00"
+        ]
+    },
+    {
+        "id": 21,
+        "nome": "Laura Antunes",
+        "genero": "Feminino",
+        "especialidade": "Terapia Cognitiva Comportamental (TCC)",
+        "crp": "03/76554",
+        "avaliacao": 4.9,
+        "numeroAvaliacoes": 244,
+        "endereco": "Maceió (AL)",
+        "valorPrimeiraConsulta": 180,
+        "proximaDataDisponivel": "2025-11-23",
+        "horariosDisponiveis": [
+            "10:00",
+            "12:00",
+            "14:00"
+        ]
+    },
+    {
+        "id": 22,
+        "nome": "Julio Cardoso",
+        "genero": "Masculino",
+        "especialidade": "Terapia Sistêmica",
+        "crp": "01/44556",
+        "avaliacao": 3.8,
+        "numeroAvaliacoes": 37,
+        "endereco": "Manaus (AM)",
+        "valorPrimeiraConsulta": 130,
+        "proximaDataDisponivel": "2025-11-24",
+        "horariosDisponiveis": [
+            "09:30",
+            "11:00",
+            "16:00"
+        ]
+    },
+    {
+        "id": 23,
+        "nome": "Natália Borges",
+        "genero": "Feminino",
+        "especialidade": "Gestalt",
+        "crp": "06/88722",
+        "avaliacao": 4.6,
+        "numeroAvaliacoes": 154,
+        "endereco": "Ribeirão Preto (SP)",
+        "valorPrimeiraConsulta": 175,
+        "proximaDataDisponivel": "2025-11-25",
+        "horariosDisponiveis": [
+            "08:00",
+            "10:00",
+            "15:00"
+        ]
+    },
+    {
+        "id": 24,
+        "nome": "Eduardo Pacheco",
+        "genero": "Masculino",
+        "especialidade": "Psicanálise",
+        "crp": "05/66721",
+        "avaliacao": 4.2,
+        "numeroAvaliacoes": 68,
+        "endereco": "Fortaleza (CE)",
+        "valorPrimeiraConsulta": 160,
+        "proximaDataDisponivel": "2025-11-26",
+        "horariosDisponiveis": [
+            "10:00",
+            "12:00",
+            "18:00"
+        ]
+    },
+    {
+        "id": 25,
+        "nome": "Amanda Lopes",
+        "genero": "Feminino",
+        "especialidade": "Terapia Humanista",
+        "crp": "08/99011",
+        "avaliacao": 4.7,
+        "numeroAvaliacoes": 131,
+        "endereco": "Joinville (SC)",
+        "valorPrimeiraConsulta": 165,
+        "proximaDataDisponivel": "2025-11-27",
+        "horariosDisponiveis": [
+            "08:00",
+            "09:00",
+            "11:00"
+        ]
+    }
+]

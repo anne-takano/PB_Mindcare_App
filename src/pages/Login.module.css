@@ -1,0 +1,30 @@
+.loginPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+}
+
+.loginCard {
+  width: min(420px, 100%);
+  padding: 1rem;
+}
+
+.loginHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  align-items: center;
+}
+
+.loginError {
+  margin-top: 1rem;
+}
+
+.loginSignup {
+  text-align: center;
+  font-size: 1rem;
+  margin: 0;
+}
