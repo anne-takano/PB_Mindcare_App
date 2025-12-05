@@ -8,6 +8,8 @@ const INITIAL_FORM = {
   nome: '',
   sobrenome: '',
   cpf: '',
+  crp: '',
+  isTerapeuta: false,
   dataNascimento: '',
   genero: '',
   email: '',
@@ -17,6 +19,7 @@ const INITIAL_FORM = {
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const CPF_REGEX = /^\d{11}$/
+const CRP_REGEX = /^\d{2}\/\d{5}$/
 
 function gerarIdentificador() {
   if (typeof globalThis !== 'undefined' && globalThis.crypto?.randomUUID) {
@@ -36,7 +39,11 @@ function validarFormulario(formData) {
     errors.sobrenome = 'Informe seu sobrenome.'
   }
 
-  if (!CPF_REGEX.test(formData.cpf)) {
+  if (formData.isTerapeuta) {
+    if (!CRP_REGEX.test(formData.crp)) {
+      errors.crp = 'Informe um CRP válido no formato 12/34567.'
+    }
+  } else if (!CPF_REGEX.test(formData.cpf)) {
     errors.cpf = 'CPF deve conter 11 dígitos numéricos.'
   }
 
@@ -75,6 +82,16 @@ function normalizarCpf(valor) {
   return valor.replace(/\D/g, '').slice(0, 11)
 }
 
+function normalizarCrp(valor) {
+  const apenasDigitos = valor.replace(/\D/g, '').slice(0, 7)
+  if (apenasDigitos.length <= 2) {
+    return apenasDigitos
+  }
+  const prefixo = apenasDigitos.slice(0, 2)
+  const sufixo = apenasDigitos.slice(2)
+  return `${prefixo}/${sufixo}`
+}
+
 function useCadastroForm() {
   const [formData, setFormData] = useState(INITIAL_FORM)
   const [errors, setErrors] = useState({})
@@ -82,8 +99,16 @@ function useCadastroForm() {
   const [submissionError, setSubmissionError] = useState('')
 
   const handleChange = useCallback((event) => {
-    const { name, value } = event.target
-    const novoValor = name === 'cpf' ? normalizarCpf(value) : value
+    const { name, value, type, checked } = event.target
+    let novoValor = value
+
+    if (name === 'cpf') {
+      novoValor = normalizarCpf(value)
+    } else if (name === 'crp') {
+      novoValor = normalizarCrp(value)
+    } else if (type === 'checkbox') {
+      novoValor = checked
+    }
 
     setFormData((prev) => ({
       ...prev,
@@ -91,6 +116,10 @@ function useCadastroForm() {
     }))
 
     setErrors((prev) => {
+      if (name === 'isTerapeuta') {
+        const { cpf, crp, ...rest } = prev
+        return rest
+      }
       if (!prev[name]) return prev
       const { [name]: _, ...rest } = prev
       return rest
@@ -117,17 +146,24 @@ function useCadastroForm() {
         const emailJaExiste = usuariosRegistrados.some(
           (usuario) => usuario.email?.toLowerCase() === emailNormalizado,
         )
-        const cpfJaExiste = usuariosRegistrados.some(
-          (usuario) => usuario.cpf === formData.cpf,
-        )
+        const cpfJaExiste =
+          !formData.isTerapeuta && formData.cpf
+            ? usuariosRegistrados.some((usuario) => usuario.cpf === formData.cpf)
+            : false
+        const crpJaExiste = formData.isTerapeuta
+          ? usuariosRegistrados.some((usuario) => usuario.crp === formData.crp)
+          : false
 
-        if (emailJaExiste || cpfJaExiste) {
+        if (emailJaExiste || cpfJaExiste || crpJaExiste) {
           const novosErros = {}
           if (emailJaExiste) {
             novosErros.email = 'Já existe um cadastro com este e-mail.'
           }
           if (cpfJaExiste) {
             novosErros.cpf = 'Já existe um cadastro com este CPF.'
+          }
+          if (crpJaExiste) {
+            novosErros.crp = 'Já existe um cadastro com este CRP.'
           }
           setErrors((prev) => ({ ...prev, ...novosErros }))
           return
@@ -137,12 +173,18 @@ function useCadastroForm() {
           id: gerarIdentificador(),
           nome: formData.nome.trim(),
           sobrenome: formData.sobrenome.trim(),
-          cpf: formData.cpf,
           dataNascimento: formData.dataNascimento,
           genero: formData.genero,
           email: formData.email.trim(),
           senha: formData.senha,
           username: formData.email.trim(),
+          isTerapeuta: formData.isTerapeuta,
+        }
+
+        if (formData.isTerapeuta) {
+          novoUsuario.crp = formData.crp
+        } else {
+          novoUsuario.cpf = formData.cpf
         }
 
         saveUsuariosRegistrados([...usuariosRegistrados, novoUsuario])

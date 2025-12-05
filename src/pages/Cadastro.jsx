@@ -82,19 +82,54 @@ function Cadastro() {
                 )}
               </Field.Root>
 
-              <Field.Root className={styles.field} required>
-                <Field.Label>CPF</Field.Label>
-                <Input
-                  id="cpf"
-                  name="cpf"
-                  type="text"
-                  inputMode="numeric"
-                  value={formData.cpf}
-                  onChange={handleChange}
-                  placeholder="Somente números"
-                />
-                {errors.cpf && <span className={styles.errorText}>{errors.cpf}</span>}
+              <Field.Root className={`${styles.field} ${styles.checkboxField}`}>
+                <Field.Label htmlFor="isTerapeuta">Você é terapeuta?</Field.Label>
+                <label className={styles.checkboxLabel}>
+                  <input
+                    id="isTerapeuta"
+                    name="isTerapeuta"
+                    type="checkbox"
+                    checked={formData.isTerapeuta}
+                    onChange={handleChange}
+                    className={styles.checkboxInput}
+                  />
+                  Sim
+                </label>
+                <Text as="span" className={styles.checkboxHint}>
+                  Deixe desmarcado para seguir como paciente.
+                </Text>
               </Field.Root>
+
+              {formData.isTerapeuta ? (
+                <Field.Root className={styles.field} required>
+                  <Field.Label>CRP</Field.Label>
+                  <Input
+                    id="crp"
+                    name="crp"
+                    type="text"
+                    inputMode="numeric"
+                    value={formData.crp}
+                    onChange={handleChange}
+                    placeholder="Formato: 12/34567"
+                    maxLength={8}
+                  />
+                  {errors.crp && <span className={styles.errorText}>{errors.crp}</span>}
+                </Field.Root>
+              ) : (
+                <Field.Root className={styles.field} required>
+                  <Field.Label>CPF</Field.Label>
+                  <Input
+                    id="cpf"
+                    name="cpf"
+                    type="text"
+                    inputMode="numeric"
+                    value={formData.cpf}
+                    onChange={handleChange}
+                    placeholder="Somente números"
+                  />
+                  {errors.cpf && <span className={styles.errorText}>{errors.cpf}</span>}
+                </Field.Root>
+              )}
 
               <Field.Root className={styles.field} required>
                 <Field.Label>Data de nascimento</Field.Label>
